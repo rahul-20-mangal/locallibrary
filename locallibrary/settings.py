@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '!2kb=twx7fzm8^%c#u4dw%3i#9zgy$hic_hd%tljp@rl$hie+5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['testpress-locallibrary.herokuapp.com','127.0.0.1']
 
