@@ -30,7 +30,7 @@ class BookListView(generic.ListView):
     model = Book
 
     def get_queryset(self):
-        return Book.objects.filter(title__icontains='war')[:5] # Get 5 books containing the title war
+        return Book.objects.filter(title__icontains='cs')[:5] # Get 5 books containing the title war
 
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get the context
