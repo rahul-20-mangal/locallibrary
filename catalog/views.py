@@ -108,9 +108,13 @@ def renew_book_librarian(request, pk):
 
     return render(request, 'catalog/book_renew_librarian.html', context)
 
+
 class AuthorListView(generic.ListView):
     model = Author
     paginate_by = 10
+
+class AuthorDetailView(generic.DetailView):
+    model = Author
 
 
 class AuthorCreate(CreateView):
